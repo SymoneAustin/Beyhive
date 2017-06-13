@@ -1,0 +1,88 @@
+<head>
+  <title>beyhive</title>
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        
+        <div class="row">
+    
+            <div class="col-xs-12 slay">
+  <h1 class="text-uppercase">beyhive</h1>
+                </div>
+            </div>
+
+   <div class="row"> 
+    <div class="col-xs-12" id="login">  
+  {{>loginButtons}}
+        </div> 
+       </div>
+        
+     <h2>Vote For Your Favorite Album From Queen B</h2>
+<!--  {{>hello}}-->
+
+<!--    <div class="row"> -->
+    <div class="albumm">    
+        
+    {{ #each albums }}
+        {{>album}}
+        {{/each}}
+        </div> 
+<!--       </div>-->
+        
+    
+        </div>
+</body>
+
+<template name="album">
+    <ul class="list-group">
+    <li class="list-group-item">
+       <img src="{{imageURL}}">  
+        
+    
+       <span class="text">{{text}}</span>
+            {{#if currentUser}}
+        <span class="badge">{{counter}}</span>
+         <button class="btn btn-primary btn-large">Vote!</button>
+        {{/if}}
+        </li>
+    </ul>
+    
+<!--
+    <li>
+    <span class="text">{{text}}</span>
+    <img src="{{imageURL}}">
+        <button class="btn btn-primary btn-large">Vote!</button>
+  <p>This has {{counter}} votes.</p>
+    </li>
+-->
+
+</template>
+
+<!--
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+-->
+
+
+<!--
+<template name="list">
+
+<ul>
+    {{#each userInCollection}}
+    <li>
+    
+    <img src="{{services.twitter.profile_image_url}}">
+        {{profileName}}(@{{services.twitter.screenName}})
+        {{services.twitter.id}}
+    
+    </li>
+    {{/each}}
+    </ul>
+
+</template>
+-->
+

@@ -1,0 +1,62 @@
+/* CSS declarations go here */
+
+body{
+background-color: black;
+}
+
+.slay{
+ display: flex;
+ width: 100vw;
+ height: 40vh;  
+ align-items: flex-end;
+ justify-content: center;
+ color: palevioletred;
+ background-color: black;
+}
+
+#login{
+display: flex;
+width: 100vw; 
+height: 25vw;
+justify-content: center;
+align-items: baseline;
+justify-content: center;
+background-color: black;
+}
+
+.text{
+ font-size: 20px;
+    color: black;
+/*    margin-right: 80px;*/
+}
+
+.albumm{
+display: flex; 
+    flex-direction: column;
+    justify-content: center;
+background-color: palevioletred;
+padding: 10px;    
+}
+
+img{
+ width: 200px;   
+}
+
+li{
+    margin: 0 auto;
+list-style: none;
+}
+
+li img {
+    width: 90px;
+}
+
+h2{
+text-align: center;
+color: palevioletred;
+}
+
+li button{
+    float: right;
+    margin-right: 20px;
+}
